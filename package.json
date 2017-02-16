@@ -9,17 +9,14 @@
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "minimal"
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.4.1"
+    "electron": "^1.4.15"
   },
   "dependencies": {
-    "spellchecker": "^3.3.1"
+    "electron": "^1.4.15"
   }
 }
