@@ -1,15 +1,8 @@
-const {app, BrowserWindow, webFrame} = require('electron')
+const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const url = require('url')
-//const checker = require('spellchecker')
 
 let mainWindow
-
-webFrame.setSpellCheckProvider('en-US', true, {
-  spellCheck (text) {
-    return !(require('spellchecker').isMisspelled(text))
-  }
-})
 
 function createWindow () {
   mainWindow = new BrowserWindow({width: 800, height: 600})
