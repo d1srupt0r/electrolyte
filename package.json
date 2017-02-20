@@ -8,23 +8,15 @@
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
-<<<<<<< HEAD
-    "Electron"
-=======
     "Electron",
     "minimal"
->>>>>>> 24b95f16b57a30ce91d6f49899d6f3d602132bce
   ],
   "author": "disruptor",
   "license": "GPG-1.0",
   "devDependencies": {
     "electron": "^1.4.15"
   },
-<<<<<<< HEAD
-  "dependencies": {}
-=======
   "dependencies": {
     "electron": "^1.4.15"
   }
->>>>>>> 24b95f16b57a30ce91d6f49899d6f3d602132bce
 }
