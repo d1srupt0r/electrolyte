@@ -12,6 +12,7 @@ function createWindow () {
     slashes: true
   }))
   mainWindow.webContents.openDevTools()
+  mainWindow.setMenu(null)
   mainWindow.on('closed', function () {
     mainWindow = null
   })
