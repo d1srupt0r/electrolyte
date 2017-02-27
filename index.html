@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Electrolyte</title>
+    <style>
+      canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
   </head>
 
   <body>
     <h1>Welcome to Electrolyte a minimalistic electron client.</h1>
+
+    <canvas id="game" width="480" height="320"></canvas>
   </body>
 
   <footer>
-    <hr/>
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
   </footer>
 
   <script>
     require('./renderer.js')
+    require('./js/game.js')
   </script>
 </html>
