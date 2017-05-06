@@ -4,19 +4,19 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+  "start": "electron ."
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
-    "Electron",
-    "minimal"
+  "Electron",
+  "minimal"
   ],
   "author": "disruptor",
   "license": "GPG-1.0",
   "devDependencies": {
-    "electron": "^1.4.15"
+  "electron": "^1.4.15"
   },
   "dependencies": {
-    "electron": "^1.4.15"
+  "electron": "^1.4.15"
   }
 }

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Electrolyte</title>
-    <style>
-      canvas { background: #eee; display: block; margin: 0 auto; }
-    </style>
+  <meta charset="utf-8">
+  <title>Electrolyte</title>
+  <style>
+    canvas { background: #eee; display: block; margin: 0 auto; }
+  </style>
   </head>
 
   <body>
-    <h1>Welcome to Electrolyte a minimalistic electron client.</h1>
+  <h1>Welcome to Electrolyte a minimalistic electron client.</h1>
 
-    <canvas id="game" width="480" height="320"></canvas>
+  <canvas id="canvas" width="480" height="320"></canvas>
   </body>
 
   <footer>
   </footer>
 
   <script>
-    require('./renderer.js')
-    require('./js/game.js')
+  renderer = require('./renderer.js')
+  renderer.Start()
   </script>
 </html>
