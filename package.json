@@ -4,19 +4,24 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-  "start": "electron ."
+    "start": "electron ."
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
-  "Electron",
-  "minimal"
+    "Electron",
+    "minimal"
   ],
   "author": "disruptor",
-  "license": "GPG-1.0",
+  "license": "GPL-3.0",
   "devDependencies": {
-  "electron": "^1.4.15"
+    "electron": "^1.6.6",
+    "electron-prebuilt": "^1.4.13"
   },
   "dependencies": {
-  "electron": "^1.4.15"
+    "bootstrap": "^3.3.7",
+    "bootstrap-treeview": "^1.2.0",
+    "bootstrap-treeview-node": "^3.1.0",
+    "electron": "^1.4.15",
+    "jquery": "^3.2.1"
   }
 }

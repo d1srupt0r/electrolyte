@@ -1,24 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
   <meta charset="utf-8">
   <title>Electrolyte</title>
-  <style>
-    canvas { background: #eee; display: block; margin: 0 auto; }
-  </style>
-  </head>
+  <link rel="stylesheet" type="text/css" href="site.css">
+</head>
 
-  <body>
-  <h1>Welcome to Electrolyte a minimalistic electron client.</h1>
+<body class="outline-g">
+  <div id="titlebar">
+    <div class="title">Electrolyte</div>
+    <div class="buttons">
+      <button name="min">-</button>
+      <button name="max">+</button>
+      <button name="close">x</button>
+    </div>
+    <div>
+    </div>
+  </div>
 
-  <canvas id="canvas" width="480" height="320"></canvas>
-  </body>
+  <div id="content" class="left outline-p">
+    <div id="navigation" class="left">
+      <div id="actionbar">
+        <ul class="plain">
+          <li id="files"> <img src="img/files.svg" /> </li>
+          <li id="search"> <img src="img/search.svg" /> </li>
+        </ul>
+      </div>
 
-  <footer>
-  </footer>
+      <div id="explorer" class="left">
+        <span class="heading">EXPLORER</span>
+        <ul class="plain"></ul>
+      </div>
+    </div>
 
+    <div id="game" class="right outline-b">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+
+  <br clear="both" />
+
+  <div id="statusbar">
+    <span id="status"></span>
+  </div>
+</body>
+
+<footer>
   <script>
-  renderer = require('./renderer.js')
-  renderer.Start()
+    require('./renderer.js')
   </script>
+</footer>
+
 </html>
