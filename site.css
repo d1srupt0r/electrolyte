@@ -7,7 +7,7 @@ ul.plain li { font-size: 10pt; font-weight: normal; list-style: none; }
 /* ids */
 #actionbar { background-color: #333; /* width: 48px; height: 100%; */ }
 #actionbar li img { margin: 0; padding: 5px; }
-#game { width: 70%; } /* ToDo: fix sizing issue */
+/* #game {  } ToDo: fix sizing issue */
 #canvas { border: 1px solid #555; background-color: #2d2d2d; }
 #content { color: #ccc; width: 100%; height: 100%; }
 #explorer { padding: 5px; display: none; background-color: #252526; }

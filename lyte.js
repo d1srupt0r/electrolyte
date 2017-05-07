@@ -28,8 +28,8 @@ function Burn () {
 }
 
 exports.Resize = (canvas, width, height) => {
-  canvas.width = width
-  canvas.height = height
+  canvas.width = 640
+  canvas.height = 480
   console.log(`canvas:${width}x${height}`)
 }
 
