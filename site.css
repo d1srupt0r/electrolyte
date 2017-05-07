@@ -1,22 +1,23 @@
 /* elements */
 a { color: #0271bc; }
 body { background-color: #252526; border: 1px solid #0271bc; font-family: 'Courier New, Courier, monospace'; font-size: 14pt; }
-body, html { margin: 0; padding: 0; }
-ul.plain { margin: 0; margin-top: 2px; padding: 0; font-weight: bold; }
-ul.plain li { font-size: 10pt; font-weight: normal; list-style: none; }
+body, html { padding: 0; margin: 0; }
+ul.plain { padding: 0; margin: 0; margin-top: 2px; font-weight: bold; }
+ul.plain li { font-size: 12pt; font-weight: normal; list-style: none; }
 /* ids */
-#actionbar { background-color: #333; /* width: 48px; height: 100%; */ }
-#actionbar li img { margin: 0; padding: 5px; }
-/* #game {  } ToDo: fix sizing issue */
+#actionbar { background-color: #333; }
+#actionbar li img { padding: 5px; margin: 0; }
+#actionbar li img:hover { cursor: pointer; image-rendering: auto; image-rendering: crisp-edges; image-rendering: pixelated; }
 #canvas { border: 1px solid #555; background-color: #2d2d2d; }
+/* #canvas:hover { border: 1px solid #fff; } */
 #content { color: #ccc; width: 100%; height: 100%; }
 #explorer { padding: 5px; display: none; background-color: #252526; }
-#navigation { padding: 5px; font-size: 12pt; width: 64px; }
-#navigation li:hover { cursor: pointer; }
+#explorer li:before { list-style-image: url('/img/expanded.svg'); }
+#navigation { padding: 5px; font-size: 12pt; }
 #plugins { border-bottom: 1px solid #000; }
-#statusbar { background-color: #0271bc/* #c63 */; color: #ccc; font-size: 11pt; font-weight: bold; padding: 5px; }
+#statusbar { padding: 5px; background-color: #0271bc/* #c63 */; color: #ccc; font-size: 11pt; font-weight: bold; }
 #statusbar span { vertical-align: middle; }
-#titlebar { -webkit-app-region: drag; height: 32px; padding: 0; margin: 0; color: #adadad; font-family: sans-serif; }
+#titlebar { padding: 0; margin: 0; -webkit-app-region: drag; height: 32px; color: #adadad; font-family: sans-serif; }
 #titlebar div.buttons { -webkit-app-region: no-drag; position: fixed; top: 1; right: 0; }
 #titlebar div.buttons button { height: 32px; width: 32px; background-color: transparent; border: none; color: #ccc; font-size: 16px; }
 #titlebar div.buttons button:hover { background-color: #3f3f41; }
@@ -26,6 +27,6 @@ ul.plain li { font-size: 10pt; font-weight: normal; list-style: none; }
 .left { float: left; }
 .outline-b { outline: 1px dashed #00f; }
 .outline-g { outline: 1px dashed #0f0; }
-.outline-r { outline: 1px dashed #f00; }
 .outline-p { outline: 1px dashed #f0f; }
+.outline-r { outline: 1px dashed #f00; }
 .right { float: right; }

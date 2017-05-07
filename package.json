@@ -18,9 +18,6 @@
     "electron-prebuilt": "^1.4.13"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "bootstrap-treeview": "^1.2.0",
-    "bootstrap-treeview-node": "^3.1.0",
     "electron": "^1.4.15",
     "jquery": "^3.2.1"
   }
