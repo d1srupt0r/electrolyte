@@ -1,5 +1,9 @@
+namespace lyte {
+}
+
 const VirtualKeys = Object.freeze({ left: 37, right: 39 })
 
+/*
 let KeyboardKeys = []
 
 // constructor
@@ -15,11 +19,6 @@ exports.vk = VirtualKeys
 exports.keyboard_check = (key) => {
   return KeyboardKeys[key]
 }
-exports.resize = (canvas, width, height) => {
-  canvas.width = 640
-  canvas.height = 480
-  console.log(`canvas:${width}x${height}`)
-}
 exports.instance_create = (x, y, canvas, obj) => {
   console.log(`created:${obj}`)
   obj.create()
@@ -30,3 +29,4 @@ exports.instance_create = (x, y, canvas, obj) => {
     y: y
   }
 }
+*/

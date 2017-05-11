@@ -1,29 +1,31 @@
 const glob = require('glob')
 const path = require('path')
 
-exports.instances = (items) => {
-  var resources = new Map()
+exports.resources = (items) => {
+  var list = new Map()
   items.forEach((item) => {
     glob(`./${item}/*.js`, 'nocase', (err, files) => {
       if (err) { console.error(err) }
       files.forEach((f) => {
-        resources.set(`o_${path.basename(f, '.js')}`, require(path.resolve(f)))
+        list.set(`o_${path.basename(f, '.js')}`, require(path.resolve(f)))
       }, this)
     })
   })
-  return resources
+  return list
 }
 
-exports.run = (api) => {}
-exports.burn = (ui) => {
-  // set 2d context
-  var ctx = ui.canvas.getContext('2d', { alpha: 1 })
-  ctx.clearRect(0, 0, ui.canvas.width, ui.canvas.height)
+exports.run = (api) => {
   // instance event life cycle
   /* instances.forEach(function (inst) {
     var obj = inst.obj
     obj.draw(ctx)
     obj.step()
   }, this) */
+}
+exports.burn = (melted) => {
+  var mhc = melted.hammer.canvas
+  // set 2d context
+  var ctx = mhc.getContext('2d', { alpha: 1 })
+  ctx.clearRect(0, 0, mhc.width, mhc.height)
 }
 exports.burn3d = (ui) => { throw new Error('Not Implemented!') }
