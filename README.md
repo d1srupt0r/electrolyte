@@ -1,4 +1,4 @@
-![Banner Image](https://raw.githubusercontent.com/d1srupt0r/electrolyte/master/img/banner.svg)
+![Banner Image](/img/banner.png)
 A lyteweight electron Game Development **IDE** for the _FUTURE_
 -
 ![Electrolyte Screenshot](/screens/Electrolyte.png)
