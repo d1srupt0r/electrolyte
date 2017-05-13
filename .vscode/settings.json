@@ -1,4 +1,12 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/typings": true,
+    // ignore compiled javascript files
+    "**/*.js": { "when": "$(basename).ts" },
+    "**/*.map": {"when": "$(basename).map"}
+  },
+  "typescript.referencesCodeLens.enabled": true
 }

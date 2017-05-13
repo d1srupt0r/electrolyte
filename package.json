@@ -1,25 +1,43 @@
 {
-  "name": "electron-quick-start",
+  "name": "electrolyte",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "tsc && concurrently \"npm run tsc:w\" \"electron .\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "postinstall": "typings install"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "minimal"
-  ],
   "author": "disruptor",
   "license": "GPL-3.0",
-  "devDependencies": {
-    "electron": "^1.6.6",
-    "electron-prebuilt": "^1.4.13"
-  },
   "dependencies": {
-    "electron": "^1.4.15",
-    "jquery": "^3.2.1",
-    "typescript": "^2.3.2"
+    "@angular/common": "~4.0.0",
+    "@angular/compiler": "~4.0.0",
+    "@angular/core": "~4.0.0",
+    "@angular/forms": "~4.0.0",
+    "@angular/http": "~4.0.0",
+    "@angular/platform-browser": "~4.0.0",
+    "@angular/platform-browser-dynamic": "~4.0.0",
+    "@angular/router": "~4.0.0",
+
+    "core-js": "^2.4.1",
+    "electron": "^1.6.7",
+    "rxjs": "^5.4.0",
+    "systemjs": "^0.20.12",
+    "zone.js": "^0.8.10"
+  },
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "csscomb": "^4.0.1",
+    "standard": "^10.0.2",
+    "tslint": "^3.15.1",
+    "typescript": "^2.3.2",
+    "typings": "^2.1.1",
+    "@types/core-js": "^0.9.41",
+    "@types/electron": "^1.4.37",
+    "@types/jquery": "^2.0.43",
+    "@types/node": "^7.0.18"
   }
 }
