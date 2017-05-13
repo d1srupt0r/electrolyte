@@ -1,4 +1,5 @@
-![Banner Image](/img/banner.png) <br/>
-> A lyteweight electron Game Development **IDE** for the _FUTURE_
--
-![Electrolyte Screenshot](/screens/Electrolyte.png)
+![Banner Image](./img/banner.png)<br/>
+<sub>**Electron** | **AngularJS** | **TypeScript** </sub>
+> A _lyteweight_ Game **IDE** for the _FUTURE_
+## Screenshots:
+![Electrolyte Screenshot](./screens/Electrolyte.png)
